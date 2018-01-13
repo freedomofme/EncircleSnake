@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="android.basic.snaketestxiong"
+      android:versionCode="2"
+      android:versionName="1.1"
+      >
+      <uses-sdk android:minSdkVersion="8" 
+           android:targetSdkVersion="17"/>
+      <meta-data android:name="YOUMI_CHANNEL"
+    android:value="10070" >
+	</meta-data>
+    <application android:label="围住贪吃蛇"
+        android:allowBackup="false" 
+        android:icon="@drawable/icon2"
+        android:hardwareAccelerated="true"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+      <activity android:name="android.basic.lesson48.MainActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation"
+        >
+  
+        </activity>
+        <activity android:name="com.ray.test.TestGallery"
+                  android:label="围住贪吃蛇"
+                   
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+          <activity
+        android:name="net.testin.android.AdBrowser"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+    </activity>
+      
+       <service
+            android:name="com.homer.service.MusicService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.homer.service.musicService" />
+            </intent-filter>
+        </service>
+        
+       <service
+        android:name="net.testin.android.AdService" >
+    </service>
+    <receiver
+        android:name="net.testin.android.AdReceiver" >
+        <intent-filter>
+            <action android:name="android.intent.action.PACKAGE_ADDED" />
+            <data android:scheme="package" />
+        </intent-filter>
+    </receiver>
+    </application>
+    
+    
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+</manifest> 

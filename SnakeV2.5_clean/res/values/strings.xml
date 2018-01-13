@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="mode_ready">按“向上”键开始\n提示:能穿过黑色贪吃蛇身体哦~</string>
+	<string name="mode_pause">暂停中\n按“向上”键恢复</string>
+	<string name="mode_lose_prefix">LOST </string>
+	<string name="mode_win_prefix">WIN </string>
+	<string name="mode_lose_step">\n花了</string>
+	<string name="mode_lose_step2">步困住了贪吃蛇</string>
+	<string name="mode_lose_fail">\n败给了贪吃蛇</string>
+	<string name="mode_lose_suffix">\n按“向上”键开始</string>
+	<string name="snake_layout_text_text"></string>
+</resources>
+
